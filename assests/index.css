@@ -1,0 +1,844 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 5px 0; */
+}
+
+.navbar1img{
+    width: 250px;
+    height: auto;
+    /* display: block; */
+}
+
+.navbar2{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;}
+    
+
+.navbar2 h2{
+    font-size: 28px;
+    /* margin: 0; */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar2 h2:hover{
+    color: orange;
+    transform: scale(1.05);
+}
+ 
+ .border{
+    border: 5px solid orange;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.heroimg1{
+    width: 100%;
+    display: block;
+}
+.herotext{
+    position:absolute;
+    top: 650px;
+    left: 570px;
+}
+.herotext h2{
+    font-size: x-large;
+    color: white;
+    position:relative;
+    top:100px;
+    left:0px;
+    
+}
+
+.herobutton1{
+    position:absolute;
+    top: 700px;
+    left: 580px;
+    display: flex;
+    gap: 20px;
+}
+
+.herobutton1 button{
+    padding: 12px 28px;
+    font-size: 18px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;}
+
+    /* Arrow mark */
+.herobutton1 button::after{
+    content: " →";
+}
+
+/* Hover effect */
+.herobutton1 button:hover{
+    background-color: darkorange;
+    transform: scale(1.08);
+}
+
+/* Clicking effect */
+.herobutton1 button:active{
+    background-color: orangered;
+    transform: scale(0.95);
+}
+.heroimg1{
+    width: 100%;
+    display: block;
+    border-bottom: 5px solid rgb(43, 0, 255);
+}
+/* .location{
+    margin-top: 40px;
+}
+.location h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: orange;
+}
+.locationcard{
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.locationcard:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255,165,0,0.5);
+}
+.locationcard img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.location p{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: navy;
+}
+.location form{
+    display: flex;
+    justify-content: center;
+}
+
+.location input{
+    width: 200px;
+    height: 40px;
+    border: 3px solid navy;
+    border-radius: 40px;
+    font-size: 20px;
+    outline: none;
+    transition: 0.3s;
+    padding: 10px;
+
+}
+.location input:focus{
+    border-color: darkorange;
+    box-shadow: 0px 0px 20px orange;
+}
+.location button{
+    display: block;
+    margin: 15px auto 30px;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.poploc{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.locationcard h3{
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    color: navy; */
+/* } */
+.promotion{
+    margin-top: 40px;
+}
+
+.promotion h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.promotion p{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: navy;
+}
+
+.promotion h3{
+    font-size: 25px;
+    color: navy;
+}
+
+.promotiontitle{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.promotionplace{
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.promotionplace:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255,165,0,0.5);
+}
+
+.kodaiboating{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.promotionplace p{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    color: navy;
+    margin: 0;
+}
+
+.promotion2 h3{
+    margin-top: 40px;
+    font-size: 25px;
+    color: navy;
+}
+.promotiontitle2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.promotion2places{
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.promotion2places:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255,165,0,0.5);
+}
+
+.promotion2places p{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    color: navy;
+    margin: 0;
+}
+.hotelpromoimg{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.destination{
+    margin-top: 40px;
+}
+.destination h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: orange;
+    text-align: center;
+}
+.destination p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: navy;
+    text-align: center;
+}
+.destinationplaces{
+   display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.destibeach{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    
+    
+}
+.destiimage{
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.destiimage:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255,165,0,0.5);
+}
+
+.destiimage h3{
+    font-size: 25px;
+    color: navy;
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+}
+
+.places{
+    margin-top: 40px;
+}
+
+.places h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.kpark1{
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.kpark1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255,165,0,0.5);
+}
+.Kodaikanal h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: navy;
+    text-align: center;
+}
+
+/* Category heading */
+.Kodaikanal h2{
+    font-size: 5px;
+    color: orange;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+/* Row layout */
+.kodaikanalbeach,
+.kodaikanalpark,
+.koadaikanaltemple,
+.kodaikanalhillstation,
+.kodaikanalwaterfall,
+.kodaikanalforest,
+.kodaikanaladventure,
+.kodaikanalhidden{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.klake1,
+.kpark1,
+.ktemple1,
+.khill1,
+.kwaterfall1,
+.kforest1,
+.kadventure1,
+.kodaihidden1{
+    width: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Hover */
+.klake1:hover,
+.kpark1:hover,
+.ktemple1:hover,
+.khill1:hover,
+.kwaterfall1:hover,
+.kforest1:hover,
+.kadventure1:hover,
+.kodaihidden1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255,165,0,0.5);
+}
+
+/* Images */
+.kodailake,
+.kodaipark,
+.kodaitemple,
+.kodaihill,
+.kodaiwaterfall,
+.kodaiforest,
+.kodaiadventure,
+.kodaihidden{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Text */
+.klake1 p,
+.kpark1 p,
+.ktemple1 p,
+.khill1 p,
+.kwaterfall1 p,
+.kforest1 p,
+.kadventure1 p,
+.kodaihidden1 p{
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    color: navy;
+    margin: 0;
+    font-weight: bold;
+}
+
+.Kodaikanal h2{
+    font-size: 45px;
+    color: navy;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.Kodaikanal h3{
+    font-size: 35px;
+    color: orange;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.kodaikanalhotels{
+    margin-top: 60px;
+}
+
+.kodaikanalhotels h1{
+    font-size: 50px;
+    color: orange;
+}
+
+.kodaikanalhotels h2{
+    font-size: 35px;
+    color: navy;
+}
+
+.kodaikanalhotels p{
+    font-size: 25px;
+    color: orange;
+}
+
+.kodaihoteltitle{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.khotel1{
+    width: 320px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.khotel1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(255,165,0,0.5);
+}
+
+.kodaihotelimg{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.khotel1 h3{
+    font-size: 28px;
+    text-align: center;
+    color: navy;
+    padding: 12px;
+}
+
+.khotel1 p{
+    font-size: 18px;
+    color: navy;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+.available{
+    color: green !important;
+    font-weight: bold;
+}
+
+.notavailable{
+    color: red !important;
+    font-weight: bold;
+}
+
+
+
+.contactus{
+    margin-top: 70px;
+}
+
+.contactus h1{
+    font-size: 50px;
+    color: orange;
+}
+
+.contactus p{
+    font-size: 25px;
+    color: navy;
+}
+
+.contactcontainer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contactdetails{
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contactdetails h2{
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.contactdetails p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contactform{
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contactform form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactform input,
+.contactform textarea{
+    padding: 15px;
+    border: 2px solid orange;
+    border-radius: 12px;
+    font-size: 18px;
+    outline: none;
+}
+
+.contactform textarea{
+    height: 120px;
+    resize: none;
+}
+
+.contactform button{
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactform button:hover{
+    background-color: orangered;
+    transform: scale(1.03);
+}
+.contactform button:active{
+    background-color: navy;
+    transform: scale(1.03);
+}
+
+
+
+
+
+
+/* Tablet */
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar2{
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .navbar2 h2{
+        font-size: 20px;
+    }
+
+    .heroimg1{
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .herotext{
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .herobutton1{
+        top: 360px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .location p,
+    .promotion p,
+    .destination p,
+    .kodaikanalhotels p,
+    .contactus p{
+        font-size: 20px;
+    }
+
+    .location input{
+        width: 80%;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px){
+
+    .navbar1img{
+        width: 140px;
+    }
+
+    .navbar2{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar2 h2{
+        font-size: 18px;
+    }
+
+    .heroimg1{
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .herotext{
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .herotext h2{
+        font-size: 18px;
+    }
+
+    .herobutton1{
+        top: 310px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .herobutton1 button{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .location h1,
+    .promotion h1,
+    .destination h1,
+    .contactus h1,
+    .kodaikanalhotels h1{
+        font-size: 35px;
+    }
+
+    .location input{
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .location button{
+        margin: 15px auto;
+    }
+
+    .locationcard,
+    .promotionplace,
+    .promotion2places,
+    .destiimage,
+    .khotel1,
+    .contactdetails,
+    .contactform{
+        width: 90%;
+    }
+
+    .contactcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.bottomtag{
+    margin-top: 80px;
+    background: linear-gradient(to right, orange, darkorange);
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.bottomcontent h1{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* .bottomcontent p{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+} */
+
+.footerrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.quicklinks{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.quicklinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quicklinks a:hover{
+    color: navy;
+}
+
+.bottomtag .navbar1img{
+    width: 180px;
+    height: auto;
+}
+
+.footer{
+    background-color: navy;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footercontent p{
+    color: white;
+    font-size: 18px;
+}
+
+.socialicons{
+    display: flex;
+    gap: 20px;
+}
+
+.socialicons a{
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.socialicons a:hover{
+    color: orange;
+    transform: scale(1.2);
+}
