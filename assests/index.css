@@ -11,6 +11,7 @@
 }
 
 .navbar{
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -527,6 +528,27 @@
 }
 
 
+.quicklinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.quicklinks a{
+    text-decoration: none;
+    color:navy;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.quicklinks a:hover{
+    color: orange;
+    transform: translateY(-3px);
+}
 
 .contactus{
     margin-top: 70px;
@@ -675,14 +697,19 @@
 
 /* Mobile */
 @media (max-width: 480px){
+    .nabar{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .navbar1img{
-        width: 140px;
+        width: 50px;
     }
 
     .navbar2{
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        gap: 25px;
+        font-size: 12px;
     }
 
     .navbar2 h2{
@@ -706,7 +733,7 @@
     }
 
     .herobutton1{
-        top: 456px;
+        top: 250px;
         left: 50%;
         transform: translateX(-50%);
         flex-direction: column;
@@ -788,7 +815,7 @@
 
 .quicklinks a{
     text-decoration: none;
-    color: white;
+    color: navy;
     font-size: 20px;
     font-weight: bold;
 }
